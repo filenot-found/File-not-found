@@ -7,52 +7,45 @@
     <!-- Load Tailwind CSS for simple styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* A simple style block to mimic the look from the image */
+        /* Use the Inter font from Google Fonts for a professional look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
         body {
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            color: #000;
-        }
-        h1 {
-            color: #0000CC; /* A dark blue for the heading */
-            font-size: 1.5em; /* A relative font size for responsiveness */
-            font-weight: bold;
-            text-decoration: underline;
-        }
-        a {
-            color: #0000CC; /* The same dark blue for links */
-            text-decoration: underline;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
+            font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
-<body class="p-4 md:p-8 max-w-2xl mx-auto">
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
 
-    <!-- Main content container -->
-    <div>
-        <!-- Heading -->
-        <h1 class="mb-4">404 error: File not found</h1>
+    <!-- Main content container, styled as a professional card -->
+    <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl flex flex-col items-center text-center max-w-xl w-full">
+
+        <!-- Optional: A modern icon to make it more professional -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6 text-red-500" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+        </svg>
+
+        <!-- Heading with more modern styling -->
+        <h1 class="text-4xl sm:text-5xl font-semibold text-gray-800 mb-4">
+            404 error: File not found
+        </h1>
 
         <!-- Main text paragraph -->
-        <p class="mb-4">
+        <p class="text-lg text-gray-600 mb-6">
             The URL you requested was not found. Maybe you would like to look at:
         </p>
 
-        <!-- List of links -->
-        <ul class="space-y-2 mb-4">
-            <li><a href="#">The main page</a></li>
-            <li><a href="#">The list of Wikimedia downloads</a></li>
+        <!-- List of links with modern link styling -->
+        <ul class="space-y-2 text-blue-600 text-lg font-medium">
+            <li><a href="#" class="hover:underline transition-all">The main page</a></li>
+            <li><a href="#" class="hover:underline transition-all">The list of Wikimedia downloads</a></li>
         </ul>
 
         <!-- Horizontal divider line -->
-        <hr class="border-t border-gray-400 my-8">
+        <hr class="border-t-2 border-gray-200 w-full my-8">
 
-        <!-- Footer text -->
-        <p class="italic text-gray-500">
-            A project of the <a href="#" class="text-gray-500">Wikimedia foundation</a>.
+        <!-- Footer text with updated color -->
+        <p class="italic text-base text-gray-500">
+            A project of the <a href="#" class="text-blue-600 hover:underline">Wikimedia foundation</a>.
         </p>
     </div>
 
