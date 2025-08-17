@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Not Found</title>
+    <!-- Load Tailwind CSS for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Use the Inter font from Google Fonts for a clean look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Main container for the error message -->
+    <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl flex flex-col items-center text-center max-w-lg w-full">
+        <!-- Icon for the error -->
+        <div class="text-green-500 mb-6">
+            <!-- SVG icon for "File Not Found" -->
+            <svg class="w-24 h-24 sm:w-32 sm:h-32 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 13h6m2-2V8m2 0a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2h4l2 4 2-4h4a2 2 0 002-2V8a2 2 0 00-2-2zM9 13h6" />
+                <path d="M15 9l-6 6M9 9l6 6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+
+        <!-- Main heading -->
+        <h1 class="text-4xl sm:text-5xl font-semibold text-gray-800 mb-4">
+            File Not Found
+        </h1>
+
+        <!-- Multilingual text as shown in the image -->
+        <div class="space-y-2 text-gray-500 text-sm sm:text-base">
+            <p>
+                文件未找到 | Datei nicht gefunden
+            </p>
+            <p>
+                Fichier n'est pas trouvé | Archivo no encontrado
+            </p>
+            <p>
+                Файл не найден | الملف غير موجود
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
